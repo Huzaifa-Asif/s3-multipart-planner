@@ -8,10 +8,10 @@
       "package": "s3-multipart-planner",
       "version": "1.0.0",
       "repository": "https://github.com/Huzaifa-Asif/s3-multipart-planner",
-      "status": "in-progress",
+      "status": "published",
       "selectedAt": "2026-10-03T05:27:00Z",
-      "publishedAt": null,
-      "notes": "First public npm module trial. No prior huzaifa-io packages were present when selected."
+      "publishedAt": "2026-10-03T05:59:50.285Z",
+      "notes": "First public npm module trial. Registry metadata, integrity, ESM/CommonJS clean-install smoke tests, source commit, and CI were verified after publication."
     }
   ]
 }
