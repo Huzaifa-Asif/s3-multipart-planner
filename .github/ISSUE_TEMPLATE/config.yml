@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Huzaifa-Asif/s3-multipart-planner/security/advisories/new
+    about: Report vulnerabilities privately

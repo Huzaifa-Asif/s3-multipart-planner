@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "timezone": "Asia/Kuala_Lumpur",
+  "dailyLimit": 1,
+  "releases": [
+    {
+      "localDate": "2026-10-03",
+      "package": "s3-multipart-planner",
+      "version": "1.0.0",
+      "repository": "https://github.com/Huzaifa-Asif/s3-multipart-planner",
+      "status": "in-progress",
+      "selectedAt": "2026-10-03T05:27:00Z",
+      "publishedAt": null,
+      "notes": "First public npm module trial. No prior huzaifa-io packages were present when selected."
+    }
+  ]
+}
