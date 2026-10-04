@@ -1,6 +1,6 @@
 {
   "name": "s3-multipart-planner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plan valid Amazon S3 multipart upload sizes, byte ranges, concurrency waves, and buffer usage without uploading anything.",
   "keywords": [
     "aws",

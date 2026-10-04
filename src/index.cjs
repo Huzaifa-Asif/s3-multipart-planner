@@ -91,9 +91,9 @@ function planMultipartUpload(objectSize, options = {}) {
   }
 
   const minimumForPartLimit = Math.ceil(objectSize / S3_LIMITS.maxParts);
-  const minimumLegalPartSize = Math.max(
-    S3_LIMITS.minPartSize,
-    roundUp(minimumForPartLimit, alignment),
+  const minimumLegalPartSize = roundUp(
+    Math.max(S3_LIMITS.minPartSize, minimumForPartLimit),
+    alignment,
   );
   const partSize = roundUp(
     Math.max(preferredPartSize, minimumLegalPartSize),

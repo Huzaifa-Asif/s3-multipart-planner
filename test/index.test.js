@@ -213,3 +213,15 @@ test('preserves range invariants across deterministic generated sizes', () => {
     }
   }
 });
+
+test('minimumLegalPartSize honors custom alignment below the minimum size', () => {
+  for (const alignment of [3 * MiB, 1_000_000, 7]) {
+    const plan = planMultipartUpload(100 * MiB, { alignment });
+    assert.equal(plan.minimumLegalPartSize % alignment, 0);
+    assert.equal(
+      plan.minimumLegalPartSize,
+      Math.ceil(S3_LIMITS.minPartSize / alignment) * alignment,
+    );
+    assert.ok(plan.minimumLegalPartSize <= plan.partSize);
+  }
+});
