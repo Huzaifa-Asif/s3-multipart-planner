@@ -1,6 +1,6 @@
 {
   "name": "s3-multipart-planner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plan valid Amazon S3 multipart upload sizes, byte ranges, concurrency waves, and buffer usage without uploading anything.",
   "keywords": [
     "aws",
@@ -33,6 +33,7 @@
   },
   "files": [
     "src",
+    "examples",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"
@@ -45,7 +46,7 @@
     "lint": "node scripts/lint.mjs",
     "test": "node --test",
     "test:coverage": "node --experimental-test-coverage --test",
-    "check": "npm run lint && npm run test:coverage && npm pack --dry-run"
+    "check": "npm run lint && npm run test:coverage && node examples/plan-upload.mjs && npm pack --dry-run"
   },
   "publishConfig": {
     "access": "public"

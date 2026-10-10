@@ -6,7 +6,14 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
-## [1.0.1] - 2026-10-05
+## [1.0.2] - 2026-10-10
+
+### Added
+
+- Ship and continuously execute a runnable multipart-planning example.
+- Link the related HTTP resume-auditing utility from the documentation.
+
+## [1.0.1] - 2026-10-06
 
 ### Fixed
 
@@ -21,6 +28,7 @@ All notable changes to this project are documented here. The format is based on
 - Concurrency-wave and peak-payload-buffer estimates.
 - ESM, CommonJS, and TypeScript declarations with zero runtime dependencies.
 
-[Unreleased]: https://github.com/Huzaifa-Asif/s3-multipart-planner/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/Huzaifa-Asif/s3-multipart-planner/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/Huzaifa-Asif/s3-multipart-planner/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/Huzaifa-Asif/s3-multipart-planner/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/Huzaifa-Asif/s3-multipart-planner/releases/tag/v1.0.0

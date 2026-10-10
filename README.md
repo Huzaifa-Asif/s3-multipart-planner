@@ -177,6 +177,15 @@ stream high-water marks, retry buffers, transforms, and checksum implementation.
 bandwidth, latency, connection reuse, CPU/checksum cost, and server throttling.
 The plan describes work; it does not benchmark the path.
 
+## Runnable example and related tool
+
+Run [`examples/plan-upload.mjs`](examples/plan-upload.mjs) for a deterministic
+260 MiB plan that checks part boundaries, concurrency waves, and buffer usage.
+The example ships in the npm tarball.
+
+For validating HTTP byte-range resume responses rather than planning S3 upload
+parts, see [`resume-range-audit`](https://www.npmjs.com/package/resume-range-audit).
+
 ## Development
 
 ```sh
